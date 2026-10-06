@@ -5,9 +5,9 @@
 ![Скриншот игры](Screenshot.png)
 ## Скачать
 
-Готовая сборка для Windows: раздел [Releases](../../releases/latest). Распакуйте архив и запустите `SpiderDance.exe`.
+Готовая сборка для Windows: раздел [Releases](https://github.com/tarnishedgold/SpiderDance/releases/latest). Это 32-битное приложение (x86), оно работает и на 64-битной Windows 10/11. Распакуйте архив и запустите `SpiderDance.exe`.
 
-Если при запуске появляется ошибка про `VCRUNTIME140.dll` или `MSVCP140.dll`, установите [Microsoft Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist).
+Если при запуске появляется ошибка про `VCRUNTIME140.dll` или `MSVCP140.dll`, установите [Microsoft Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist) версии **x86**.
 
 Музыка необязательна: игра запускается и без неё. Чтобы включить звук, положите файл `music.ogg` рядом с `.exe`.
 
@@ -48,12 +48,11 @@
 
 ## Сборка из исходников
 
-[Visual Studio 2026 Community](https://visualstudio.microsoft.com/) с компилятором C++17 и [SFML 2.5.1](https://www.sfml-dev.org/download/sfml/2.5.1/).
-
-1. Укажите каталоги SFML в свойствах проекта: `Include` и `Lib`.
-2. Подключите библиотеки: `sfml-graphics`, `sfml-window`, `sfml-audio`, `sfml-system` (в Debug с суффиксом `-d`).
-3. Скопируйте DLL SFML (из папки `bin`) и `openal32.dll` рядом с `.exe`.
-4. Спрайты, шрифт и файлы расписаний должны лежать в рабочей папке игры.
+1. Установите [Visual Studio 2026 Community](https://visualstudio.microsoft.com/) с компонентом «Разработка классических приложений на C++» и [SFML 2.5.1](https://www.sfml-dev.org/download/sfml/2.5.1/) для Visual C++ 15 (2017), 32-bit.
+2. Задайте переменную окружения `SFML_DIR` с путём к папке SFML и перезапустите Visual Studio.
+3. Откройте `spider_dance.slnx`, выберите конфигурацию **Release** и платформу **x86**, соберите проект.
+4. Скопируйте DLL SFML (из папки `bin`) и `openal32.dll` рядом с `.exe`.
+5. Спрайты, шрифт и файлы расписаний должны лежать в рабочей папке игры.
 
 ## Структура
 
