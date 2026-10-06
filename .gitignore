@@ -1,0 +1,67 @@
+# ---------- Build results ----------
+build/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+cmake-build-*/
+
+# ---------- Visual Studio ----------
+.vs/
+*.user
+*.suo
+*.sln.docstates
+*.VC.db
+*.VC.VC.opendb
+ipch/
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+
+# ---------- Compiled files ----------
+*.obj
+*.o
+*.pdb
+*.ilk
+*.idb
+*.exp
+*.lib
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+
+# ---------- CMake ----------
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# ---------- Logs ----------
+*.log
+logs/
+
+# ---------- OS junk ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- IDE ----------
+.vscode/
+.idea/
+
+# ---------- Personal ----------
+*.tmp
+*.bak
+
+# ---------- Music & Sounds ----------
+*.ogg

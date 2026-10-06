@@ -1,0 +1,13 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="Release" />
+    <BuildType Name="Релиз" />
+    <Platform Name="Win32" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="spider_dance.vcxproj" Id="8463e0bb-fd67-4de4-8efa-4802231f200d">
+    <BuildType Solution="Release|x64" Project="Debug" />
+  </Project>
+</Solution>
